@@ -51,8 +51,8 @@ export const Text : TextComponent= React.forwardRef(<C extends React.ElementType
     : {};
 
   return (
-    <Component {...restProps} {...internalStyles}>
-      {children} ref={ref}
+    <Component {...restProps} {...internalStyles} ref={ref}>
+      {children}
     </Component>
   );
 })
