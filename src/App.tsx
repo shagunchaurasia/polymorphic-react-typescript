@@ -10,7 +10,6 @@ const Emphasis = ({ children }: { children: string | number }) => {
   );
 };
 function App() {
-
   const ref = useRef<HTMLHeadingElement | null>(null);
 
   return (
@@ -21,7 +20,9 @@ function App() {
       <Text as="h2">This is Heading 2</Text>
       <Text as="h3">This is Heading 3</Text>
       <Text>This is span</Text>
-<Text as="h5" ref={ref} > This is a ref </Text>
+      <Text as="h5" ref={ref}>
+        This is a ref
+      </Text>
       <br />
       <Text as={Emphasis}> This is important Emphasis</Text>
     </div>
